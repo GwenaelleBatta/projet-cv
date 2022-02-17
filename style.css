@@ -3,34 +3,31 @@
     src: url("./font/Ubuntu-Regular.ttf");
 }
 body{
-    font-family: 'Ubuntu';
+    font-family: 'Ubuntu', serif;
     font-size: 17px;
     box-sizing: border-box;
     margin: 0;
 }
 header{
-    margin-left: 200px;
+    padding-left: 200px;
 }
 main{
-    margin-left: 200px;
+    padding-left: 200px;
 }
-#cvlogo{
+.body__logo{
 
 }
-#battagwenaelle{
+.intro__title{
     font-weight: 400;
     justify-self: center;
     /*flex-grow: 1;*/
     padding-top: 200px;
     line-height: 50px;
 }
-#etudianteHEPL{
-    /*flex-grow: 1;*/
-}
 
-.transparent{
+.intro__div{
     background-color: rgba(204,0,13,0.8);
-    max-width: 600px;
+    max-width: 60%;/*600px*/
     min-height: 800px;
     display: flex;
     flex-direction: column;
@@ -45,14 +42,14 @@ main{
 }
 ul a{
    text-decoration: none;
-    color: black;
+    color: #000000;
 }
 ul~ul a{
     color: #AEAEAE;
     text-transform: uppercase;
 }
 .name{
-    color: white;
+    color: #FFFFFF;
     font-size: 2em;
 }
 h2{
@@ -63,7 +60,7 @@ nav{
     grid-template-areas: "h2 h2"
                          ". . "
 }
-#nav{
+.nav__title{
     grid-area: h2;
     display: none;
 }
@@ -91,10 +88,10 @@ ul~ul{
     grid-area: p2;
     align-self: end;
 }
-#photo{
+.presentation__photo{
     grid-area: img;
 }
-.introduction p{
+.presentation__text{
     width: 420px;
     line-height: 2em;
     padding: 2em 0;
@@ -106,7 +103,7 @@ ul~ul{
 /*}*/
 mark{
     color: #E30513;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 .langage{
     display: grid;
@@ -137,7 +134,7 @@ mark{
 }
 .langage h4{
     text-transform: uppercase;
-    color: black;
+    color: #000000;
     margin: 0 1em;
 }
 .js{
@@ -160,19 +157,19 @@ mark{
     grid-row: 4;
     grid-column: 3;
 }
-#school{
+.school{
     background-image: url("./IMG/pexels-burst-545057.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
-#school svg{
+.school svg{
     width: 3%;
     background-color: #A3CEF0;
     padding: 1.2em ;
     border-radius: 50%;
-    color: white;
+    color: #FFFFFF;
 }
-#scolaire{
+.school__title{
     font-size: 0.8235294117647059em; /*14/17*/
     text-transform: uppercase;
     padding: 78px 127px 60px;
@@ -180,10 +177,10 @@ mark{
 }
 .scolaire{
     background-color: rgba(204,0,13,0.8);
-    max-width: 846px;
+    max-width: 60%;/*846px*/
     color: #FFFFFF;
 }
-.school{
+.school__liste{
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -196,7 +193,7 @@ mark{
     padding-left: 97px;
 }
 .xp{
-    color: white;
+    color: #FFFFFF;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
@@ -245,7 +242,7 @@ mark{
     font-size: 0.8235294117647059em;
     text-transform: uppercase;
     font-weight: 600;
-    background-color: white;
+    background-color: #FFFFFF;
     letter-spacing: 1px;
 }
 .xp div input{
@@ -265,14 +262,14 @@ mark{
     font-weight: 600;
     border: none;
     background-color: #E30513;
-    color: white;
+    color: #FFFFFF;
     text-transform: uppercase;
     padding: 1.5em 4.5em;
     margin-top: 70px;
     margin-bottom: 260px;
 }
 .red:hover{
-    background-color: white;
+    background-color: #FFFFFF;
     color: #E30513;
 }
 .jobdescription{
@@ -319,7 +316,7 @@ mark{
     font-size: 0.8235294117647059em;
     text-transform: uppercase;
     font-weight: 600;
-    background-color: white;
+    background-color: #FFFFFF;
     letter-spacing: 1px;
 }
 .qualites h2{
@@ -353,8 +350,8 @@ mark{
     font-size: 1.176470588235294em;
 }
 footer{
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
     display: grid;
 }
 footer section{
@@ -370,7 +367,7 @@ footer a{
 .contact p{
     color: #A8B3B3;
 }
-#mail{
+.contact__email{
     font-family: Ubuntu;
     padding: 1em;
 }
@@ -378,7 +375,15 @@ footer figure{
     display: inline-block;
 }
 .hidden{
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
 }
 .ecole{
     border-top: 1px solid #EAEAEA;
@@ -394,11 +399,11 @@ footer{
 }
 .mail a:hover{
     background-color: #E30513;
-    color: white;
+    color: #FFFFFF;
     border-radius: 5px;
     padding: 10px;
 }
-#contact{
+.contact__title{
     font-size: 24px;/*24/14*/
     margin-top: 0;
 }
@@ -406,7 +411,7 @@ footer{
     font-size: 16px; /*16/14*/
 }
 .coordonnees p:hover{
-    color: #e30513;
+    color: #E30513;
 }
 .contact{
 

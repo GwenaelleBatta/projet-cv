@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="author" content="Batta Gwenaëlle">
@@ -12,20 +12,23 @@
 	</head>
 	<body aria-labelledby="cv">
 		<header>
-			<h1 id="cvlogo" role="heading" aria-level= "1">
-				<a href="#"><img src="./IMG/Logo.svg" alt="Logo de Batta Gwenaëlle" height="70" width="70"></a>
+			<h1 id="cv" class="hidden" role="heading" aria-level= "1">
+				Gwenaëlle Batta Projet CV
 			</h1>
-			<nav aria-labelledby="nav">
-				<h2 id="nav" role="heading" aria-level="2">
+			<figure class="body__logo figure">
+				<a href="#" class="figure__link"><img src="./IMG/Logo.svg" alt="Logo de Batta Gwenaëlle" class="figure__logo" height="70" width="70"></a>
+			</figure>
+			<nav aria-labelledby="nav" class="nav">
+				<h2 id="nav" class="nav__title" role="heading" aria-level="2">
 					Navigation
 				</h2>
-				<ul>
-					<li><a href="#cv">Logo</a></li>
-					<li><a href="#battagwenaelle">Découvrez moi</a></li>
-					<li><a href="#decouvrez">Informations personnelles</a></li>
-					<li><a href="#langage">Langages web</a></li>
+				<ul class="nav__liste">
+					<li class="nav__item"><a class="nav__link" href="#cv">Logo</a></li>
+					<li class="nav__item"><a class="nav__link" href="#battagwenaelle">Découvrez moi</a></li>
+					<li class="nav__item"><a class="nav__link" href="#decouvrez">Informations personnelles</a></li>
+					<li class="nav__item"><a class="nav__link" href="#langage">Langages web</a></li>
 				</ul>
-				<ul>
+				<ul class="nav__liste">
 					<li><a href="#scolaire">Parcours scolaire</a></li>
 					<li><a href="#experience">Expérience pro</a></li>
 					<li><a href="#job">Objectif</a></li>
@@ -36,222 +39,222 @@
 		</header>
 		<main>
 			<section class="intro"aria-labelledby="battagwenaelle">
-				<div class="transparent">
-					<h2 id="battagwenaelle" role="heading" aria-level= "2" class="name">
+				<div class="intro__div">
+					<h2 id="battagwenaelle" role="heading" aria-level= "2" class="intro__title">
 						Je m'appelle <br>
 						Gwenaëlle Batta, <br>
 						je suis étudiante pour <br>
 						devenir Webdesigner <br>
 					</h2>
-					<form action="https://www.provincedeliege.be/hauteecole">
-						<input id="etudianteHEPL" type="submit" value="&Eacute;tudiante à HEPL" class="red">
+					<form action="https://www.provincedeliege.be/hauteecole" class="intro__form">
+						<input id="etudianteHEPL" type="submit" value="&Eacute;tudiante à HEPL" class="intro__button red">
 					</form>
 				</div>
 			</section>
-			<section aria-labelledby="decouvrez" class="introduction">
-				<h2 id="decouvrez" role="heading" aria-level= "2">
+			<section aria-labelledby="decouvrez" class="presentation">
+				<h2 id="decouvrez" role="heading" aria-level= "2" class="presentation__title">
 					<mark>Découvrez</mark> moi à travers cette page web!
 				</h2>
-				<div class="description">
-					<p>
+				<div class="presentation__description">
+					<p class="presentation__text">
 						Je m&rsquo;appelle <strong>Gwenaëlle Batta</strong>, je suis étudiante à l&rsquo;<strong>HEPL de Seraing </strong> dans l&rsquo;option Web. J&rsquo;habite rue Charles Rittwéger au numéro 186 à 4910 <strong>THEUX</strong>. Mon adresse mail est <strong>gwenaellebatta@gmail.com</strong>.
 						Je suis en possession du <strong>permis B</strong> et je possède également un véhicule personnel.
 					</p>
-					<p>
+					<p class="presentation__text">
 						Je possède plusieurs <strong>diplômes</strong> tels que:le <strong>CESS</strong>, le diplôme  de <strong>gestion</strong> de base, le certificat de qualification en <strong>mode et création </strong> et enfin le certificat de qualification de ma <strong>septième tailleur</strong>. J&rsquo;ai également un bon niveau de <strong>français</strong> car c&rsquo;est ma langue maternelle, un niveau moyen en <strong>anglais</strong> et en <strong>néerlandais</strong>.
 					</p>
-					<figure>
-						<img src="./IMG/Gwen.jpg" alt="Photo de Batta Gwenaëlle" width="570" id="photo">
+					<figure class="presentation__figure">
+						<img class="presentation__photo"src="./IMG/Gwen.jpg" alt="Photo de Batta Gwenaëlle" width="570">
 					</figure>
 				</div>
 			</section>
 			<section aria-labelledby ="langage" class="langage">
-				<h2 id="langage" role="heading" aria-level= "2">
+				<h2 id="langage" role="heading" aria-level= "2" class="langage__title">
 					Les <mark>langages</mark> du web maîtrisé
 				</h2>
-				<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1033.42 1033.42"><defs><style>.cls-1{opacity:0.7;}.cls-2{fill:#e30917;}.cls-3{fill:none;stroke:#717070;}</style></defs><g id="Rectangle_5" data-name="Rectangle 5" class="cls-1"><rect class="cls-2" x="-40.5" y="-396" width="677" height="1633" transform="translate(308.65 730.09) rotate(-45)"/><rect class="cls-3" x="-40" y="-395.5" width="676" height="1632" transform="translate(308.65 730.09) rotate(-45)"/></g></svg>
-				<section aria-labelledby="js" class="js">
-					<h3 id="js" role="heading" aria-level= "3" class="hidden">
+<!--				<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1033.42 1033.42"><defs><style>.cls-1{opacity:0.7;}.cls-2{fill:#e30917;}.cls-3{fill:none;stroke:#717070;}</style></defs><g id="Rectangle_5" data-name="Rectangle 5" class="cls-1"><rect class="cls-2" x="-40.5" y="-396" width="677" height="1633" transform="translate(308.65 730.09) rotate(-45)"/><rect class="cls-3" x="-40" y="-395.5" width="676" height="1632" transform="translate(308.65 730.09) rotate(-45)"/></g></svg>-->
+				<section aria-labelledby="js" class="langage__js js">
+					<h3 id="js" role="heading" aria-level= "3" class="js__title hidden">
 						Javascript
 					</h3>
-					<figure>
-						<img src="./IMG/js.png" alt="Logo Javascript" width="60">
+					<figure class="js__figure">
+						<img src="./IMG/js.png" alt="Logo Javascript" width="60" class="js__logo">
 					</figure>
-					<section aria-labelledby="js-text">
-						<h4 id="js-text" role="heading" aria-level= "4">
+					<section aria-labelledby="js-text" class="js__description desc">
+						<h4 id="js-text" role="heading" aria-level= "4" class="desc__title">
 							Javascript
 						</h4>
-						<p>
+						<p class="desc__text">
 							C&rsquo;est un langage qui permet d&rsquo;implémenter des mécanismes complexes sur une page web.
 						</p>
 					</section>
 				</section>
-				<section aria-labelledby="html" class="html">
-					<h3 id="html" role="heading" aria-level= "3" class="hidden">
+				<section aria-labelledby="html" class=" langage__html html">
+					<h3 id="html" role="heading" aria-level= "3" class="html__title hidden">
 						HTML
 					</h3>
-					<figure>
-						<img src="./IMG/html.png" alt="Logo HTML" width="60">
+					<figure class="html__figure">
+						<img src="./IMG/html.png" alt="Logo HTML" width="60" class="html__logo">
 					</figure>
-					<section aria-labelledby="html-text">
-						<h4 id="html-text" role="heading" aria-level="4">
+					<section aria-labelledby="html-text" class="html__description desc">
+						<h4 id="html-text" role="heading" aria-level="4" class="desc__title">
 							HTML
 						</h4>
-						<p>
+						<p class="desc__text">
 							 Il est utilisé afin de créer et de représenter le contenu d&rsquo;une page web et sa structure. 
 						</p>
 					</section>
 				</section>
-				<section aria-labelledby="css" class="css">
-					<h3 id="css" role="heading" aria-level="3" class="hidden">
+				<section aria-labelledby="css" class="langage__css css">
+					<h3 id="css" role="heading" aria-level="3" class="css__title hidden">
 						CSS
 					</h3>
-					<figure>
+					<figure class="css__figure">
 						<img src="./IMG/CSS.png" alt="Logo CSS" width="60">
 					</figure>
-					<section aria-labelledby="css-text">
-						<h4 id="css-text" role="heading" aria-level="4">
+					<section aria-labelledby="css-text" class="css_description desc">
+						<h4 id="css-text" role="heading" aria-level="4" class="desc__title">
 							CSS
 						</h4>
-						<p>
+						<p class="desc__text">
 							 C&rsquo;est un langage utilisé sur Internet pour la mise en forme de fichiers et de pages HTML. 
 						</p>
 					</section>
 				</section>
-				<section aria-labelledby="sql" class="sql">
-					<h3 id="sql" role="heading" aria-level="3" class="hidden">
+				<section aria-labelledby="sql" class="langage__sql sql">
+					<h3 id="sql" role="heading" aria-level="3" class="sql__title hidden">
 						SQL
 					</h3>
-					<figure>
+					<figure class="sql__figure">
 						<img src="./IMG/SQL.png" alt="Logo SQL" width="47">
 					</figure>
-					<section aria-labelledby="sql-text">
-						<h4 id="sql-text" role="heading" aria-level="4">
+					<section aria-labelledby="sql-text" class="sql__description desc">
+						<h4 id="sql-text" role="heading" aria-level="4" class="desc__title">
 							SQL
 						</h4>
-						<p>
+						<p class="desc__text">
 							 C&rsquo;est un langage normalisé pour mettre à jour, récupérer et calculer des données d'une base de données. 
 						</p>
 					</section>
 				</section>
-				<section aria-labelledby="php" class="php">
-					<h3 id="php" role="heading" aria-level="3" class="hidden">
+				<section aria-labelledby="php" class="langage__php php">
+					<h3 id="php" role="heading" aria-level="3" class="php__title hidden">
 						PHP
 					</h3>
-					<figure>
+					<figure class="php__figure">
 						<img src="./IMG/PHP.png" alt="Logo PHP" width="70">
 					</figure>
-					<section aria-labelledby="php-text">
-						<h4 id="php-text" role="heading" aria-level="4">
+					<section aria-labelledby="php-text" class="php__description desc">
+						<h4 id="php-text" role="heading" aria-level="4" class="desc__title">
 							PHP
 						</h4>
-						<p>
+						<p class="desc__text">
 							 C&rsquo;est un langage côté serveur  pour le développement web et aussi  utilisé dans programmation généraliste.
 						</p>
 					</section>
 				</section>
 			</section>
-			<section id="school" aria-labelledby="scolaire">
+			<section class="school" aria-labelledby="scolaire">
 				<div class="scolaire">
-					<h2 id="scolaire" role="heading" aria-level="2">
+					<h2 class="school__title" role="heading" aria-level="2">
 						Parcours scolaire
 					</h2>
-					<ul class="school">
-						<li>2021 2e Bachelier infographie</li>
-						<li>2020 1er Bachelier infographie</li>
-						<li>2019 Bachelier Comptabilité</li>
-						<li>2017 7eme tailleur</li>
-						<li>2015-2017 &Eacute;tude en couture</li>
+					<ul class="school__liste">
+						<li class="school__item">2021 2e Bachelier infographie</li>
+						<li class="school__item">2020 1er Bachelier infographie</li>
+						<li class="school__item">2019 Bachelier Comptabilité</li>
+						<li class="school__item">2017 7eme tailleur</li>
+						<li class="school__item">2015-2017 &Eacute;tude en couture</li>
 					</ul>
-						<span>
+						<span class="school__span">
 							<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.24 21.83"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:none;stroke:#FFFFFF;}</style></defs><path class="cls-1" d="M244.53,263.36" transform="translate(-284.03 -202.66)"/><g id="Groupe_3" data-name="Groupe 3"><path id="Tracé_3" data-name="Tracé 3" class="cls-2" d="M284,213.57h27.4" transform="translate(-284.03 -202.66)"/><path id="Tracé_4" data-name="Tracé 4" class="cls-2" d="M303,224.17l8.6-10.6L303,203" transform="translate(-284.03 -202.66)"/></g></svg>
 						</span>
 				</div>
 			</section>
-			<section aria-labelledby="experience">
-				<h2 id="experience" role="heading" aria-level="2">
+			<section aria-labelledby="experience" class="ref">
+				<h2 id="experience" role="heading" aria-level="2" class="ref__title">
 					Mes <mark>références</mark>
 				</h2>
 				<div class="xp">
-				<section class="boulangerie" aria-labelledby="boulangerie">
-					<h3 id="boulangerie" role="heading" aria-level="3" class="hidden">
+				<section class="xp__boulangerie bake" aria-labelledby="boulangerie">
+					<h3 id="boulangerie" role="heading" aria-level="3" class="bake__title hidden">
 						Boulangerie Collin
 					</h3>
-					<figure class="patron">
+					<figure class="bake__figure patron">
 						<img src="./IMG/collin_fred.jpg" alt="Photo de Frédérique Collin">
 					</figure>
-					<p>
+					<p class="bake__text">
 						<q>Très dynamique et consciencieuse dans les tâches demandées</q>
 					</p>
-					<p>
+					<p class="bake__text">
 						<small>F.COLLIN, PATRON DE LA BOULANGERIE COLLIN</small>
 					</p>
-					<figure class="logo">
+					<figure class="bake__logo">
 						<img src="./IMG/" alt="Logo de la Boulangerie Collin">
 					</figure>
 				</section>
-				<section class="me" aria-labelledby="nom">
-					<h3 id="nom" role="heading" aria-level="3" class="hidden">
+				<section class="xp__me me" aria-labelledby="nom">
+					<h3 id="nom" role="heading" aria-level="3" class="me__title hidden">
 						Batta Gwenaelle
 					</h3>
-					<figure>
+					<figure class="me__figure">
 						<img src="./IMG/Gwen2.jpg" alt="Photo de Batta Gwenaëlle" width="330">
 					</figure>
 				</section>
-				<section class="couture" aria-labelledby="coudre">
-					<h3 id="coudre" role="heading" aria-level="3" class="hidden">
+				<section class="xp__couture sew" aria-labelledby="coudre">
+					<h3 id="coudre" role="heading" aria-level="3" class="sew__title hidden">
 						La Boite à Coudre
 					</h3>
-					<figure class="patron">
+					<figure class="sew__figure patron">
 						<img src="./IMG/grosjean_jullye.jpg" alt="Photo de la couturière Jullye Grosjean">
 					</figure>
-					<p>
+					<p class="sew__text">
 						<q>Très travailleuse et toujours présentes à l&rsquo;heure. Bon contact avecles clients. </q>
 					</p>
-					<p>
+					<p class="sew__text">
 						<small>J. GROSJEAN, GERANTE DU COMMERCE "LA BOITE A COUDRE"</small>
 					</p>
-					<figure class="logo">
+					<figure class="sew__logo">
 						<img src="./IMG/boite.png" alt="Logo de la boite à coudre" width="40">
 					</figure>
 				</section>
-				<section class="tailleur" aria-labelledby="antoine">
-					<h3 id="antoine" role="heading" aria-level="3" class="hidden">
+				<section class="xp__tailleur tailor" aria-labelledby="antoine">
+					<h3 id="antoine" role="heading" aria-level="3" class="tailor__title hidden">
 						Philippe Antoine
 					</h3>
-					<figure class="patron">
+					<figure class="tailor__figure patron">
 						<img src="./IMG/antoine_philippe%20(2).png" alt="Photo du tailleur Philippe Antoine">
 					</figure>
-					<p>
+					<p class="tailor__text">
 						<q>Courageuse et n&rsquo;a pas peur du travail et très volontaire. </q>
 					</p>
-					<p>
+					<p class="tailor__text">
 						<small>P. ANTOINE, GERANT DU COMMERCE"PHILIPPE ANTOINE"</small>
 					</p>
-					<figure class="logo">
+					<figure class="tailor__logo">
 						<img src="./IMG/Antoine.png" alt="Logo du tailleur Philippe Antoine" width="70">
 					</figure>
 				</section>
-				<div>
-					<form action="#" method="get">
-						<input type="submit" name="Voir le détail du parcours scolaire" value="Tout voir">
+				<div class="xp__div">
+					<form action="#" method="get" class="xp__form">
+						<input type="submit" name="Voir le détail du parcours scolaire" value="Tout voir" class="xp__input">
 					</form>	
 				</div>
 				</div>
 			</section>
-			<section aria-labelledby="job">
-				<h2 id="job" role="heading" aria-level="2">
+			<section aria-labelledby="job" class="job">
+				<h2 id="job" role="heading" aria-level="2" class="job__title">
 					Mon <mark>job</mark> idéal
 				</h2>
-				<div class="jobdescription">
-				<p>
+				<div class="job__description">
+				<p class="job__text">
 					J'aimerais un travail dans le <strong>monde du web</strong>, en tant que créatrice de page  web et plus particulièrement comme  <strong>webdesigner</strong>. J'apprécie beaucoup le côté plus <strong>créatif</strong> de cette partie du développement web que ce soit pour les sites web ou pour le développement d'applications.
 					Dans l'idéal, j'aimerai un lieu de travail où règne <strong>la bonne entente</strong> entre tout le employé de la boite et où je pourrais y trouver une entraide	</p>
-				<p>
+				<p class="job__text">
 					afin de  <strong>me perfectionner</strong> dans mon travail ainsi que dans les liens sociaux et peut être y trouver une opportunité d'évoluer au sein de celle-ci. Ainsi que contribuer à son développement et de <strong>devenir un membre important</strong> au sein de cette société.
 				</p>
-					<form action="#">
-						<input type="submit" value="Découvrez mon objectif" class="red">
+					<form action="#" class="job__form">
+						<input type="submit" value="Découvrez mon objectif" class="job__button red">
 					</form>
 				</div>
 			</section>
@@ -341,13 +344,13 @@
 				</ul>
 			</section>
 			<section aria-labelledby="contact" class="contact">
-				<h2 id="contact" role="heading" aria-level="2">
+				<h2 id="contact" class="contact__title" role="heading" aria-level="2">
 					Utiliser cet endroit pour me contacter
 				</h2>
 				<div>
 					<form action="#" method="post">
 						<label for="mail" class="hidden">Votre courriel</label>
-						<input type="email" name="mail" id="mail" title="Veuillez entrez votre addresse mail" placeholder="Votre addresse mail&hellip;">
+						<input type="email" name="mail" id="mail" class="contact__email" title="Veuillez entrez votre addresse mail" placeholder="Votre addresse mail&hellip;">
 						<input type="submit" name="Envoyer" id="Envoyer">
 					</form>
 				</div>
